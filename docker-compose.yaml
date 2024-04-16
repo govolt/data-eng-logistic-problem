@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgis:
+    image: postgis/postgis:latest
+    container_name: govolt_db_candidate
+    environment:
+      POSTGRES_USER: govolt_candidate
+      POSTGRES_PASSWORD: candidate_password
+      POSTGRES_DB: data_eng_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./initdb:/docker-entrypoint-initdb.d #Assicurati che la cartella initdb contenga il tuo file SQL
+      - data_eng_volume:/var/lib/postgresql/data
+
+volumes:
+  data_eng_volume:
