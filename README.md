@@ -33,9 +33,11 @@ The CSV file located in the `input` folder is used to emulate data coming from e
 
 To get started with this project, follow these steps:
 
-1. Ensure you have Docker and Docker Compose installed on your machine.
-2. Clone this repository to your local machine.
-3. Navigate to the root directory of the project in your terminal.
-4. Run `docker-compose up` to build and start the containers.
-5. Once the containers are running, you can connect to the PostgreSQL database using the connection details provided above.
-6. To simulate data ingestion, you can add new CSV files to the `input` folder according to your testing needs.
+1. Fork this repo.
+2. Ensure you have Docker and Docker Compose installed on your machine.
+3. Clone this repository to your local machine.
+4. Navigate to the root directory of the project in your terminal.
+5. Run `docker-compose up` to build and start the containers.
+6. Once the containers are running, you can connect to the PostgreSQL database using the connection details provided above.
+7. To simulate data ingestion, you can add new CSV files to the `input` folder according to your testing needs.
+8. Commit and push the solution to your repo.
