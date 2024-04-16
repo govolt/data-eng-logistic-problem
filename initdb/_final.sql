@@ -222,3 +222,6 @@ INSERT INTO logistics_vehicles (id, Vehicle, Brand, Purchased) VALUES (84, '1124
 INSERT INTO logistics_vehicles (id, Vehicle, Brand, Purchased) VALUES (85, 'Thesis', 'Lancia', 2024);
 INSERT INTO logistics_vehicles (id, Vehicle, Brand, Purchased) VALUES (86, 'Freemont', 'Fiat', 2002);
 INSERT INTO logistics_vehicles (id, Vehicle, Brand, Purchased) VALUES (87, 'Giulia', 'Alfa Romeo', 2006);
+CREATE TABLE IF NOT EXISTS cost_modelling (id INT PRIMARY KEY, Daytime BOOLEAN, Multiplier INT);
+INSERT INTO cost_modelling (id, Daytime, Multiplier) VALUES (0, TRUE, 1.05);
+INSERT INTO cost_modelling (id, Daytime, Multiplier) VALUES (1, FALSE, 1.75);
